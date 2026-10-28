@@ -5,12 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cloud-workload-forecasting"
 version = "1.0.0"
-description = "Candidate starter utilities for a cloud workload forecasting take-home"
+description = "Leakage-safe short-horizon cloud workload forecasting"
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26", "pandas>=2.0"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+analysis = ["matplotlib>=3.8"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
