@@ -1,0 +1,33 @@
+name: Verify solution
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install project
+        run: python -m pip install -e '.[dev,analysis]'
+      - name: Test utilities and leakage boundary
+        run: python -m pytest -q
+      - name: Reproduce the fixed-release forecast
+        if: matrix.python == '3.13'
+        run: |
+          python -m cwfc.download --data challenge_data
+          python -m cwfc.predict --output /tmp/cwfc/predictions.csv --artifacts /tmp/cwfc/artifacts
+          python -m cwfc.evaluate --predictions /tmp/cwfc/predictions.csv --artifacts /tmp/cwfc/artifacts
+          python -m cwfc.analyze --artifacts /tmp/cwfc/artifacts
+          python scripts/check_predictions.py predictions.csv /tmp/cwfc/predictions.csv
