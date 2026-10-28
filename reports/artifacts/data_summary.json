@@ -1,0 +1,55 @@
+{
+  "rows": 1340000,
+  "vms": 10000,
+  "timestamps": 134,
+  "first_timestamp": 0,
+  "last_timestamp": 39900,
+  "elapsed_hours": 11.083333333333334,
+  "observation_counts": {
+    "134": 10000
+  },
+  "cadence_counts": {
+    "300.0": 1330000
+  },
+  "missing_values": {
+    "timestamp": 0,
+    "vm_id": 0,
+    "min_cpu": 0,
+    "max_cpu": 0,
+    "avg_cpu": 0
+  },
+  "duplicates": 0,
+  "observed_arrivals": 0,
+  "observed_departures": 0,
+  "train_cpu_quantiles": {
+    "0.0": 0.0071589216268651,
+    "0.25": 2.486945395240028,
+    "0.5": 5.119809152561594,
+    "0.75": 9.647973827501037,
+    "0.9": 19.691118594608653,
+    "0.95": 37.293248468366095,
+    "0.99": 87.40634736453232,
+    "1.0": 99.48802665399457
+  },
+  "train_zero_cpu_fraction": 0.0,
+  "train_above80_fraction": 0.012720909090909092,
+  "train_mean_cpu": 9.41408901953901,
+  "train_aggregate_min": 9.111633601754887,
+  "train_aggregate_max": 9.912175173984913,
+  "train_min_timestamp": 32400,
+  "train_max_timestamp": 16500,
+  "train_acf": {
+    "1": 0.6672358236125618,
+    "6": 0.47713596397929603,
+    "12": 0.3666123245758548,
+    "24": -0.02638127598969213
+  },
+  "metadata_preexisting": 10000,
+  "metadata_deleted_in_window": 0,
+  "metadata_lifetime_hours": {
+    "0.0": 11.25,
+    "0.5": 719.8333333333334,
+    "0.9": 719.8333333333334,
+    "1.0": 719.8333333333334
+  }
+}

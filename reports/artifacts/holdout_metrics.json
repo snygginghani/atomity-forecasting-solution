@@ -1,0 +1,52 @@
+{
+  "active_vm_count": {
+    "mae": 0.0,
+    "rmse": 0.0,
+    "smape": 0.0,
+    "baseline_mae": 0.0,
+    "relative_mae": null,
+    "peak_threshold": 10000.0,
+    "peak_n": 24,
+    "peak_mae": 0.0,
+    "worst_underprediction": 0.0,
+    "bias": 0.0,
+    "envelope_coverage": 1.0,
+    "baseline": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape": 0.0,
+      "baseline_mae": 0.0,
+      "relative_mae": null,
+      "peak_threshold": 10000.0,
+      "peak_n": 24,
+      "peak_mae": 0.0,
+      "worst_underprediction": 0.0,
+      "bias": 0.0
+    }
+  },
+  "aggregate_cpu_utilization": {
+    "mae": 0.0987371931498886,
+    "rmse": 0.12028634965055199,
+    "smape": 1.0645867913313738,
+    "baseline_mae": 0.1467824591504233,
+    "relative_mae": 0.6726770604701636,
+    "peak_threshold": 9.668361517488389,
+    "peak_n": 0,
+    "peak_mae": null,
+    "worst_underprediction": 0.3021917927916391,
+    "bias": 0.03011056456233659,
+    "envelope_coverage": 1.0,
+    "baseline": {
+      "mae": 0.1467824591504233,
+      "rmse": 0.18478539074333666,
+      "smape": 1.5850535267466987,
+      "baseline_mae": 0.1467824591504233,
+      "relative_mae": 1.0,
+      "peak_threshold": 9.668361517488389,
+      "peak_n": 0,
+      "peak_mae": null,
+      "worst_underprediction": 0.4714340337064922,
+      "bias": -0.10443155806626603
+    }
+  }
+}

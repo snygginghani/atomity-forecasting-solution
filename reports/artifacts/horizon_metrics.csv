@@ -1,0 +1,9 @@
+target,minutes_start,minutes_end,mae
+active_vm_count,5,30,0.0
+active_vm_count,35,60,0.0
+active_vm_count,65,90,0.0
+active_vm_count,95,120,0.0
+aggregate_cpu_utilization,5,30,0.12242413804640101
+aggregate_cpu_utilization,35,60,0.08115226341790056
+aggregate_cpu_utilization,65,90,0.21272225055183736
+aggregate_cpu_utilization,95,120,0.2676030463076526

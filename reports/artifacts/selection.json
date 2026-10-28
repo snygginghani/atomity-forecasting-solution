@@ -1,0 +1,50 @@
+{
+  "protocol": "train-only selection; evaluate separately after freezing predictions",
+  "horizon": 24,
+  "n_train": 110,
+  "origins": [
+    38,
+    62,
+    86
+  ],
+  "train_sha256": "bf0ca7792c73655cbcd5f9f057e4e0aa70a9c3ae86bf890d3491760132fa49c3",
+  "checksums": {
+    "vm_cpu_readings.csv.gz": "f961964e51f2250534a1273ce8b5aec76816b1ef9628d6356daad0f5af345440",
+    "vm_metadata.csv.gz": "acc07b52b3757d0c62628fea9cc988933aac93c48d40a8e4a527a15c10e1334b",
+    "DATA_CARD.md": "3ae8a73f19243ee57e49b8bb94ca4baa4687a7cb4b12ae8326026bb84f547e43"
+  },
+  "environment": {
+    "python": "3.13.3",
+    "numpy": "2.4.6",
+    "pandas": "3.0.2"
+  },
+  "models": {
+    "active_vm_count": "persistence",
+    "aggregate_cpu_utilization": "ridge_ar_6"
+  },
+  "validation_mae": {
+    "active_vm_count": {
+      "persistence": 0.0,
+      "mean_6": 0.0,
+      "mean_12": 0.0,
+      "mean_24": 0.0,
+      "historical_mean": 0.0,
+      "damped_trend_12": 1.6674069532503684e-12,
+      "ridge_ar_6": 0.0
+    },
+    "aggregate_cpu_utilization": {
+      "persistence": 0.20819795783100745,
+      "mean_6": 0.21400513453177494,
+      "mean_12": 0.1783847883401853,
+      "mean_24": 0.20773401720592766,
+      "historical_mean": 0.1911793593774435,
+      "damped_trend_12": 0.2531527789546114,
+      "ridge_ar_6": 0.17097542458094775
+    }
+  },
+  "envelope_radius": {
+    "active_vm_count": 0.0,
+    "aggregate_cpu_utilization": 0.3496237036697316
+  },
+  "predictions_sha256": "318821a32c9ccd745e8a50a9ad24f70bb7b6b1894353a44ef55c4114c0183e0b"
+}
