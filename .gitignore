@@ -2,3 +2,7 @@
 .venv/
 .pytest_cache/
 __pycache__/
+challenge_data/*.csv.gz
+challenge_data/SHA256SUMS
+challenge_data/DATA_CARD.md
+*.zip
